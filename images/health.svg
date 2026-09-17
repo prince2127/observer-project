@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5fff1"/><stop offset="1" stop-color="#e7f5ff"/></linearGradient></defs>
+<rect width="800" height="450" fill="url(#bg)"/>
+<rect x="85" y="100" width="630" height="285" rx="22" fill="#fff" stroke="#cbd8df" stroke-width="5"/>
+<rect x="110" y="130" width="575" height="55" rx="14" fill="#138808"/>
+<text x="398" y="167" text-anchor="middle" fill="#fff" font-family="Arial" font-size="26" font-weight="700">COMMUNITY HEALTH HUB</text>
+<path d="M360 225h80v26h26v80h-26v26h-80v-26h-26v-80h26z" fill="#fff" stroke="#C94141" stroke-width="8"/>
+<rect x="125" y="225" width="180" height="28" rx="14" fill="#FF9933" opacity=".9"/>
+<rect x="495" y="225" width="160" height="28" rx="14" fill="#1A4D8F" opacity=".9"/>
+<rect x="125" y="275" width="180" height="20" rx="10" fill="#e6edf2"/>
+<rect x="495" y="275" width="160" height="20" rx="10" fill="#e6edf2"/>
+</svg>

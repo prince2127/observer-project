@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Workers | Observer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="app">
+
+<header class="header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <img class="logo-img" src="images/eye.svg" alt="Observer">
+      <span class="brand-copy"><strong>Observer</strong><small>SIH26103</small></span>
+    </a>
+    <a class="nav-btn" href="login.html">↪ Sign Out</a>
+  </div>
+</header>
+
+<input type="checkbox" id="sidebar-toggle" class="sidebar-toggle-input">
+<label for="sidebar-toggle" class="sidebar-toggle" aria-label="Minimize sidebar"></label>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="side-title">People Management</div>
+    <a class="side-link" data-label="My Projects" href="projects.html"><span class="side-icon">▤</span>My Projects</a>
+    <a class="side-link" data-label="Selected Project" href="project.html"><span class="side-icon">◫</span>Selected Project</a>
+    <a class="side-link active" href="workers.html"><span class="side-icon">●</span>Workers</a>
+
+    <div class="side-group">
+      <div class="side-title">Account</div>
+      <a class="side-link" data-label="Sign Out" href="login.html"><span class="side-icon">↪</span>Sign Out</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topline">
+      <div>
+        <h1>Workers</h1>
+        <p>Search and view worker details, roles, contact information and work classification.</p>
+      </div>
+      <div class="userbox">
+        <span class="avatar">AK</span>
+        <div>
+          <strong>Admin User</strong>
+          <small>Project Administrator</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="worker-summary">
+      <div class="worker-summary-card all"><span>All Workers</span><strong>48</strong><small>People in directory</small></div>
+      <div class="worker-summary-card current"><span>Current Workers</span><strong>31</strong><small>Active staff</small></div>
+      <div class="worker-summary-card part"><span>Part-time</span><strong>07</strong><small>Flexible assignments</small></div>
+      <div class="worker-summary-card contract"><span>Contract</span><strong>08</strong><small>Project-based staff</small></div>
+      <div class="worker-summary-card former"><span>Former</span><strong>02</strong><small>Historical records</small></div>
+    </div>
+
+    <div class="worker-note">
+      <strong>Worker Directory</strong>
+      <p>Use the search box to find a worker by name, role, phone number, Gmail, department or project. The information below is sample prototype data and should be replaced with your actual organization data.</p>
+    </div>
+
+    <div class="worker-toolbar">
+      <label class="worker-search">
+        <span>⌕</span>
+        <input type="search" placeholder="Search worker by name, role, phone, Gmail or project">
+      </label>
+      <a class="btn btn-primary" href="#">+ Add Worker</a>
+    </div>
+
+    <div class="worker-filter-row">
+      <a href="#" class="worker-filter active">All Workers</a>
+      <a href="#" class="worker-filter">Current</a>
+      <a href="#" class="worker-filter">Part-time</a>
+      <a href="#" class="worker-filter">Contract</a>
+      <a href="#" class="worker-filter">Former</a>
+      <span class="worker-count">Showing 8 sample worker records</span>
+    </div>
+
+    <section class="worker-grid">
+
+      <article class="worker-card">
+        <div class="worker-top">
+          <div class="worker-identity">
+            <span class="worker-avatar">AK</span>
+            <div><h3>A. Kumar</h3><a class="profile-link" href="worker-ak.html">View Profile →</a><div class="worker-role">Project Manager · Infrastructure</div></div>
+          </div>
+          <span class="tag green-tag worker-status">Current</span>
+        </div>
+        <div class="worker-details">
+          <div class="worker-detail"><label>Phone</label><span>+91 9XXXX XX101</span></div>
+          <div class="worker-detail"><label>Gmail</label><span><a href="mailto:a.kumar@example.com">a.kumar@example.com</a></span></div>
+          <div class="worker-detail"><label>Dept.</label><span>Infrastructure</span></div>
+        </div>
+        <div class="worker-projects"><span class="worker-project">Digital Road Upgrade</span><span class="worker-project">Rural Connectivity</span></div>
+      </article>
+
+      <article class="worker-card">
+        <div class="worker-top">
+          <div class="worker-identity">
+            <span class="worker-avatar">RS</span>
+            <div><h3>R. Sharma</h3><a class="profile-link" href="worker-rs.html">View Profile →</a><div class="worker-role">Project Officer · Monitoring</div></div>
+          </div>
+          <span class="tag green-tag worker-status">Current</span>
+        </div>
+        <div class="worker-details">
+          <div class="worker-detail"><label>Phone</label><span>+91 9XXXX XX102</span></div>
+          <div class="worker-detail"><label>Gmail</label><span><a href="mailto:r.sharma@example.com">r.sharma@example.com</a></span></div>
+          <div class="worker-detail"><label>Dept.</label><span>Project Monitoring</span></div>
+        </div>
+        <div class="worker-projects"><span class="worker-project">Smart Water Network</span><span class="worker-project">Digital Road Upgrade</span></div>
+      </article>
+
+      <article class="worker-card">
+        <div class="worker-top">
+          <div class="worker-identity">
+            <span class="worker-avatar">SV</span>
+            <div><h3>S. Verma</h3><a class="profile-link" href="worker-sv.html">View Profile →</a><div class="worker-role">Project Manager · Health</div></div>
+          </div>
+          <span class="tag green-tag worker-status">Current</span>
+        </div>
+        <div class="worker-details">
+          <div class="worker-detail"><label>Phone</label><span>+91 9XXXX XX103</span></div>
+          <div class="worker-detail"><label>Gmail</label><span><a href="mailto:s.verma@example.com">s.verma@example.com</a></span></div>
+          <div class="worker-detail"><label>Dept.</label><span>Health</span></div>
+        </div>
+        <div class="worker-projects"><span class="worker-project">Community Health Hub</span></div>
+      </article>
+
+      <article class="worker-card">
+        <div class="worker-top">
+          <div class="worker-identity">
+            <span class="worker-avatar">PS</span>
+            <div><h3>P. Singh</h3><a class="profile-link" href="worker-ps.html">View Profile →</a><div class="worker-role">Project Manager · Connectivity</div></div>
+          </div>
+          <span class="tag green-tag worker-status">Current</span>
+        </div>
+        <div class="worker-details">
+          <div class="worker-detail"><label>Phone</label><span>+91 9XXXX XX104</span></div>
+          <div class="worker-detail"><label>Gmail</label><span><a href="mailto:p.singh@example.com">p.singh@example.com</a></span></div>
+          <div class="worker-detail"><label>Dept.</label><span>Infrastructure</span></div>
+        </div>
+        <div class="worker-projects"><span class="worker-project">Rural Connectivity Project</span></div>
+      </article>
+
+      <article class="worker-card">
+        <div class="worker-top">
+          <div class="worker-identity">
+            <span class="worker-avatar">FS</span>
+            <div><h3>Field Staff 01</h3><a class="profile-link" href="worker-fs.html">View Profile →</a><div class="worker-role">Field Worker · Evidence</div></div>
+          </div>
+          <span class="tag orange-tag worker-status">Part-time</span>
+        </div>
+        <div class="worker-details">
+          <div class="worker-detail"><label>Phone</label><span>+91 9XXXX XX105</span></div>
+          <div class="worker-detail"><label>Gmail</label><span><a href="mailto:field01@example.com">field01@example.com</a></span></div>
+          <div class="worker-detail"><label>Dept.</label><span>Field Operations</span></div>
+        </div>
+        <div class="worker-projects"><span class="worker-project">Digital Road Upgrade</span><span class="worker-project">Smart Water Network</span></div>
+      </article>
+
+      <article class="worker-card">
+        <div class="worker-top">
+          <div class="worker-identity">
+            <span class="worker-avatar">QC</span>
+            <div><h3>QC Team 01</h3><a class="profile-link" href="worker-qc.html">View Profile →</a><div class="worker-role">Quality Inspector · Verification</div></div>
+          </div>
+          <span class="tag blue-tag worker-status">Contract</span>
+        </div>
+        <div class="worker-details">
+          <div class="worker-detail"><label>Phone</label><span>+91 9XXXX XX106</span></div>
+          <div class="worker-detail"><label>Gmail</label><span><a href="mailto:qc01@example.com">qc01@example.com</a></span></div>
+          <div class="worker-detail"><label>Dept.</label><span>Quality Control</span></div>
+        </div>
+        <div class="worker-projects"><span class="worker-project">Digital Road Upgrade</span></div>
+      </article>
+
+      <article class="worker-card">
+        <div class="worker-top">
+          <div class="worker-identity">
+            <span class="worker-avatar">DT</span>
+            <div><h3>Decision Team 01</h3><a class="profile-link" href="worker-dt.html">View Profile →</a><div class="worker-role">Decision Support · KPI Review</div></div>
+          </div>
+          <span class="tag blue-tag worker-status">Contract</span>
+        </div>
+        <div class="worker-details">
+          <div class="worker-detail"><label>Phone</label><span>+91 9XXXX XX107</span></div>
+          <div class="worker-detail"><label>Gmail</label><span><a href="mailto:decision01@example.com">decision01@example.com</a></span></div>
+          <div class="worker-detail"><label>Dept.</label><span>Decision Support</span></div>
+        </div>
+        <div class="worker-projects"><span class="worker-project">All monitored projects</span></div>
+      </article>
+
+      <article class="worker-card">
+        <div class="worker-top">
+          <div class="worker-identity">
+            <span class="worker-avatar">RM</span>
+            <div><h3>R. Mehta</h3><a class="profile-link" href="worker-rm.html">View Profile →</a><div class="worker-role">Former Project Coordinator</div></div>
+          </div>
+          <span class="tag red-tag worker-status">Former</span>
+        </div>
+        <div class="worker-details">
+          <div class="worker-detail"><label>Phone</label><span>Archived</span></div>
+          <div class="worker-detail"><label>Gmail</label><span><a href="mailto:r.mehta@example.com">r.mehta@example.com</a></span></div>
+          <div class="worker-detail"><label>Dept.</label><span>Project Office</span></div>
+        </div>
+        <div class="worker-projects"><span class="worker-project">Historical Records</span></div>
+      </article>
+
+    </section>
+  </main>
+</div>
+</body>
+</html>
